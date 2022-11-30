@@ -1,26 +1,44 @@
 package condicionaljava;
 
+
+import java.util.Scanner;
+
 public class Condicional {
 
 	public static void main(String[] args) {
 		
-		int x = 5;
+		Scanner sc = new Scanner(System.in);
+		
+		int Hora;
 		
 		
-		System.out.println("Bom dia !!");	
 		
-		if(x < 0) {
+		System.out.println("Qual o horario neste momento?");
+		
+		Hora = sc.nextInt();
+		
 			
-			System.out.println("Boa tarde !!");
+		
+		if(Hora > 0 && Hora < 12) {
 			
-		} else {
+			System.out.println("Bom dia !!");
 			
-			System.out.println("Boa noite !!");	
+			
+			
+			} else if(Hora >= 12 && Hora <= 18) {
+			
+				System.out.println("Boa tarde !!");
+			
+			} else {
+			
+				System.out.println("Boa noite !!");
+			
 		}
 		
 		
 
 		
+		sc.close();
 		
 	}
 
