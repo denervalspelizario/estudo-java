@@ -25,11 +25,16 @@ public class ExercicioCondicional {
 		} else {
 			
 			
+			int valorAcrescimento = 2;
+			
+			
 			double minutoHora = Hora / 60;
 			double horaMinuto = 60 * minutoHora ;
-			double valorPorHora = planoBasico / minutosBasico  ;
+			double diferencaMinutos = Hora - 100;
 			
-			double valorTotalPagar = horaMinuto * valorPorHora;
+			double valorHoraAcrescimo = diferencaMinutos * valorAcrescimento;
+			
+			double valorTotalPagar = planoBasico + valorHoraAcrescimo;
 			
 			System.out.println("Voce irá pagar o valor de " + valorTotalPagar);
 			
