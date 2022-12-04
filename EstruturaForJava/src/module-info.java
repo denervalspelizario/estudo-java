@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author Ares
+ *
+ */
+module EstruturaForJava {
+}
