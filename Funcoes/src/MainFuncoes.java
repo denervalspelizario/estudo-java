@@ -19,10 +19,32 @@ public class MainFuncoes {
 		int b = inputDado.nextInt();
 		int c = inputDado.nextInt();
 		
+		int higher = max(a,b,c);
 		
+		showResult(higher);
 		
 		
 		inputDado.close();
 	}
+	
+	public static int max(int x, int y, int z) {
+		int aux;
+		if(x > y && x > z) {
+			aux = x;
+		} else if (y > x && y > z) {
+			aux = y;
+		} else {
+			aux = z;
+		}
+		
+		return aux;
+		
+	}
+	
+	public static  void showResult(int value) {
+		System.out.println("O maior valor é " + value);
+			
+	}
+	
 
 }
