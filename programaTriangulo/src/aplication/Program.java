@@ -14,8 +14,8 @@ public class Program {
 		Scanner inputDado = new Scanner(System.in);
 		
 		Triangulo x, y;  // classe importada
-		x = new Triangulo();
-		y = new Triangulo();
+		x = new Triangulo();   //x virou uma classe filho de Triangulo
+		y = new Triangulo();  // y virou uma class filho de Triangulo
 		
 		
 		System.out.println("Digite os valores de cada lado do triangulo X: ");
