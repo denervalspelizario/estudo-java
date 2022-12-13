@@ -24,11 +24,12 @@ public class Product {
 		return "product "
 			   + name             // agora toda vez que a product for chamada ela vai imprimir os dados desse jeito
 			   + ", $ "              
-			   + price
+			   + String.format("%.2f", price)   // usase o string.format para imprmir a atribuicao price no caso com DUAS casas decimais tipo 82.00
 			   + ", "
 			   + quantity
 			   + " units, Total: $ "
-			   + totalValueInStock();
+			   + String.format("%.2f", totalValueInStock());   // usase o string.format para imprmir a funcao total no caso com DUAS casas decimais tipo 82.00
+
 	}
 	
 }
