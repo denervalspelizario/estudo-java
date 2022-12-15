@@ -6,21 +6,22 @@ public class Retangulo {
 	public double altura;
 	
 	
+	
 	public double area() {  // 
 		
-		return base * altura / 2;
+		return base * altura ;
 			
 	}
 	
 	public double perimetro() {  // 
 		
-		return  base + altura * 2;
+		return  (base + altura) * 2;
 			
 	}
 	
 	public double diagonal() {  // 
 		
-		return 
+		return  Math.sqrt((base * base) + (altura * altura));
 			
 	}
 }
