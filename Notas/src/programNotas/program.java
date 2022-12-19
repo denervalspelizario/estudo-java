@@ -53,11 +53,11 @@ public class program {
 			System.out.println("Failed");
 			
 			double notaMissing = notaBase - notaFinalAluno;
-			System.out.printf("MISSING  %.2f%n", notaMissing +" Points");
+			System.out.printf("MISSING  %.2f%n", notaMissing ," Points");
 		};
 
 		
 		
-	}
+	};
 
-}
+};
